@@ -22,8 +22,8 @@
      name: roboshop
 
   - name: check /app directory exist or not
-     ansible.builtin.stat:
-      path: /tmp
+    ansible.builtin.stat:
+      path: /app
     register: directory
 
   - name: print the directory stats
