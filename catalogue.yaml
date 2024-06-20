@@ -50,7 +50,7 @@
   - name: install dependencies
     ansible.builtin.command: npm install
       args: 
-         chdir: /app
+        chdir: /app
 
   - name: copy catalogue service
     ansible.builtin.copy:
@@ -63,7 +63,7 @@
 
   - name: copy mongo repo to yum.repos.d
     ansible.builtin.copy:
-      src: mongodb.repoo
+      src: mongodb.repo
       dest: /etc/yum.repos.d/mongo.repo
 
   - name: install mongodb
