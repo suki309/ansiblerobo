@@ -72,6 +72,7 @@
       state: installed
       disable_gpg_check: true
 
+
   - name: load user data
     ansible.builtin.command: mongo --host 172.31.37.39 < /app/schema/user.js
 
