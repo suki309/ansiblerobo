@@ -72,7 +72,7 @@
       state: installed
 
   - name: load cart data
-    ansible.builtin.command: mongo --host 172.31.37.39 < /app/schema/cart.js
+    ansible.builtin.command: mongo --host 172.31.37.39 </app/schema/cart.js
 
   - name: restart cart
     ansible.builtin.service:
