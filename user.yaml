@@ -72,7 +72,7 @@
       state: installed
 
   - name: load user data
-    ansible.builtin.command: mongo --host 172.31.37.39 < /app/schema/user.js
+    ansible.builtin.command: mongo --host 172.31.37.39 </app/schema/user.js
 
   - name: restart user
     ansible.builtin.service:
